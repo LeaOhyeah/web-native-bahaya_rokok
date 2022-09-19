@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+
+header {
+    display: inline;
+    text-align: center;
+}
+
+
+.judul {
+    padding: 2px;
+    font-size: 20px;
+    color: black;
+    background-color: #FF0000;
+}
+
+
+.navigasi {
+	top: 0;
+    padding: 5px;
+	position: sticky;
+    background-color: #790000;
+}
+
+
+/* navbar di header*/
+header nav li {
+    display: inline;
+	list-style-type: none;
+	margin-right: 20px;
+}
+header nav li :hover {
+    opacity: 0.7;
+}
+header nav li :active {
+    color: red;
+}
+
+
+header nav a {
+    font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	color: white;
+}
+
+
+main {
+	padding: 20px;
+	overflow: auto;
+}
+h2 {
+    color: black;
+}
+li {
+    list-style-type:none;
+    font-weight: 600;
+}
+
+main #konten {
+    float: left;
+    width: 75%;
+}
+.card {
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #FFE2E2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #FFE2E2;
+    box-shadow: 0 0 8px 0 #790000;
+}
+.gambar {
+	width: 100%;
+	max-height: 500px;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+/* profil */
+main aside {
+	float: left;
+	width: 25%;
+	padding-left: 20px;
+}
+main aside section img {
+    padding: 10px;
+    max-height: 50px;
+    max-width: 50px;
+}
+main aside section img:hover {
+    opacity: 0.5;
+}
+.icon_profil {
+    border-radius: 100%;
+    max-width: 100px;
+    object-position: center;
+}
+
+
+footer {
+	padding: 10px;
+	color: white;
+	background-color: black;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+    main #konten,
+    main aside {
+        width: 100%;
+        padding-left: 0;
+    }
+}
